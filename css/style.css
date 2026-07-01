@@ -1,0 +1,1455 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/*=========================================================
+                    GOOGLE FONTS
+=========================================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&family=Caveat:wght@400;700&display=swap');
+
+/*=========================================================
+                    ROOT COLORS
+=========================================================*/
+
+:root{
+
+    --cream:#FFF8F2;
+    --ivory:#FDF2EC;
+    --pink:#F7C8D7;
+    --rose:#F6B6C8;
+    --red:#D94B5A;
+
+    --brown:#4A3428;
+    --gray:#7D6B63;
+
+    --white:#ffffff;
+
+    --shadow:0 15px 40px rgba(0,0,0,.08);
+
+    --transition:.4s ease;
+
+}
+
+/*=========================================================
+                    RESET
+=========================================================*/
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    background:var(--cream);
+
+    color:var(--brown);
+
+    font-family:'Poppins',sans-serif;
+
+    overflow-x:hidden;
+
+    position:relative;
+
+}
+
+/*=========================================================
+                BACKGROUND
+=========================================================*/
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    background-image:
+
+    radial-gradient(circle at 20% 20%,rgba(247,200,215,.15) 0,transparent 200px),
+
+    radial-gradient(circle at 80% 15%,rgba(246,182,200,.15) 0,transparent 180px),
+
+    radial-gradient(circle at 70% 80%,rgba(247,200,215,.15) 0,transparent 250px);
+
+    z-index:-2;
+
+}
+
+/*=========================================================
+                NAVBAR
+=========================================================*/
+
+header{
+
+    width:100%;
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    z-index:1000;
+
+}
+
+.navbar{
+
+    width:90%;
+
+    margin:18px auto;
+
+    background:rgba(255,255,255,.45);
+
+    backdrop-filter:blur(18px);
+
+    border-radius:50px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 40px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.logo{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:38px;
+
+    font-weight:700;
+
+}
+
+.navbar ul{
+
+    display:flex;
+
+    gap:35px;
+
+    list-style:none;
+
+}
+
+.navbar a{
+
+    text-decoration:none;
+
+    color:var(--brown);
+
+    font-weight:500;
+
+    transition:var(--transition);
+
+}
+
+.navbar a:hover{
+
+    color:var(--red);
+
+}
+
+.contact-btn{
+
+    background:var(--rose);
+
+    padding:14px 28px;
+
+    border-radius:40px;
+
+    transition:var(--transition);
+
+}
+
+.contact-btn:hover{
+
+    transform:translateY(-4px);
+
+}
+
+/*=========================================================
+                HERO
+=========================================================*/
+
+.hero{
+
+    width:90%;
+
+    margin:auto;
+
+    min-height:100vh;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    align-items:center;
+
+    gap:80px;
+
+    padding-top:130px;
+
+}
+
+.hero-left{
+    padding-left: 40px;
+}
+
+.small-heading{
+
+    color:var(--red);
+
+    font-weight:600;
+
+    letter-spacing:2px;
+
+    margin-bottom:20px;
+
+}
+
+.hero h1{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:55px;
+
+    line-height:1;
+
+    margin-bottom:20px;
+
+}
+
+.hero-description{
+
+    color:var(--gray);
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    max-width:520px;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+    margin-top:40px;
+
+}
+
+.primary-btn{
+
+    background:var(--rose);
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:16px 38px;
+
+    border-radius:50px;
+
+    transition:var(--transition);
+
+    display:inline-block;
+
+}
+
+.primary-btn:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 15px 30px rgba(0,0,0,.12);
+
+}
+
+.secondary-btn{
+
+    border:2px solid var(--rose);
+
+    color:var(--brown);
+
+    text-decoration:none;
+
+    padding:16px 35px;
+
+    border-radius:50px;
+
+    transition:var(--transition);
+
+}
+
+.secondary-btn:hover{
+
+    background:var(--rose);
+
+    color:white;
+
+}
+
+.signature{
+
+    font-family:'Caveat',cursive;
+
+    font-size:34px;
+
+    color:var(--red);
+
+    margin-top:50px;
+
+}
+
+/*=========================================================
+                HERO IMAGE
+=========================================================*/
+
+.image-box{
+
+    width:520px;
+
+    height:620px;
+
+    margin:auto;
+
+    border-radius:45% 55% 40% 60%;
+
+    background:white;
+
+    padding:18px;
+
+    box-shadow:var(--shadow);
+
+    position:relative;
+
+}
+
+.image-box img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    border-radius:45% 55% 40% 60%;
+
+}
+
+/*======================================
+        BACKGROUND DECORATIONS
+=======================================*/
+
+.decorations{
+
+    position: fixed;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    z-index: -1;
+
+}
+
+.dec{
+
+    position: fixed;
+
+    opacity: 0.75;
+
+    font-size: 30px;
+
+    filter:drop-shadow(0 3px 5px rgba(0,0,0,.10));
+
+    user-select: none;
+
+}
+
+/* ========= LEFT SIDE ========= */
+
+.l1{
+
+    top: 12%;
+    left: 2%;
+
+}
+
+.l2{
+
+    top: 27%;
+    left: 3.5%;
+
+}
+
+.l3{
+
+    top: 45%;
+    left: 2%;
+
+}
+
+.l4{
+
+    top: 65%;
+    left: 3.8%;
+
+    transform: rotate(-15deg);
+
+}
+
+.l5{
+
+    top: 84%;
+    left: 2.3%;
+
+}
+
+/* ========= RIGHT SIDE ========= */
+
+.r1{
+
+    top: 16%;
+    right: 2.2%;
+
+}
+
+.r2{
+
+    top: 34%;
+    right: 3.8%;
+
+    transform: rotate(12deg);
+
+}
+
+.r3{
+
+    top: 53%;
+    right: 2.2%;
+
+}
+
+.r4{
+
+    top: 72%;
+    right: 3.6%;
+
+    transform: rotate(-18deg);
+
+}
+
+.r5{
+
+    top: 90%;
+    right: 2.2%;
+
+}
+
+
+/*=========================================================
+                YARN LINE
+=========================================================*/
+
+.yarn-line{
+
+    position:fixed;
+
+    left:25px;
+
+    top:0;
+
+    width:130px;
+
+    height:100%;
+
+    z-index:-2;
+
+}
+
+/*=========================================================
+                ABOUT
+=========================================================*/
+
+.about{
+
+    width:90%;
+
+    margin:120px auto;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:70px;
+
+    align-items:center;
+
+}
+
+.about-image{
+
+    background:white;
+
+    padding:18px;
+
+    border-radius:25px;
+
+    box-shadow:var(--shadow);
+
+    transform:rotate(-4deg);
+
+    width:75%;
+
+    margin:auto;
+
+}
+
+.about-image img{
+
+    width:100%;
+
+    border-radius:18px;
+
+}
+
+.section-tag{
+
+    color:var(--red);
+
+    font-weight:600;
+
+    letter-spacing:2px;
+
+}
+
+.about h2{
+
+    font-size:66px;
+
+    font-family:'Cormorant Garamond',serif;
+
+    line-height:1.15;
+
+    margin-bottom:10px;
+
+}
+
+.about p{
+
+    color:var(--gray);
+
+    font-size: 18px;
+
+    line-height:2.1;
+
+    margin-bottom:26px;
+
+    max-width:620px;
+
+}
+
+.about-subtitle{
+
+    font-size:20px;
+
+    color:#9d7b70;
+
+    font-style:italic;
+
+    margin-bottom:30px;
+
+    line-height:1.6;
+
+}
+
+/*=========================
+      READ MORE ANIMATION
+=========================*/
+
+#more-text{
+
+    max-height: 0;
+
+    overflow: hidden;
+
+    opacity: 0;
+
+    transition: max-height .6s ease, opacity .4s ease;
+
+}
+
+#more-text.show{
+
+    max-height: 600px;
+
+    opacity: 1;
+
+}
+/*=========================================================
+                FLOAT
+=========================================================*/
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-10px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*=========================================================
+                FEATURED CREATIONS
+=========================================================*/
+
+.featured{
+    width:80%;
+    margin:120px auto;
+}
+
+.section-heading{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-heading span{
+    color:var(--red);
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-weight:600;
+}
+
+.section-heading h2{
+    font-family:'Cormorant Garamond',serif;
+    font-size:56px;
+    margin:15px 0;
+}
+
+.section-heading p{
+    color:var(--gray);
+    max-width:600px;
+    margin:auto;
+}
+
+.featured-grid{
+    display:grid;
+    grid-template-columns:repeat(3,320px);
+    justify-content:center;
+    gap:35px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+    position:relative;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+    transition:0.4s;
+    display:block;
+}
+
+.card:hover img{
+    transform:scale(1.05);
+}
+
+.card-content{
+    padding:15px 18px 18px;
+}
+
+.card-content h3{
+    font-family:'Cormorant Garamond',serif;
+    font-size:28px;
+    margin-bottom:6px;
+}
+
+.card-content p{
+    color:var(--gray);
+}
+
+.card-heart{
+    position:absolute;
+    top:18px;
+    right:18px;
+    background:white;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:22px;
+    color:var(--red);
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:0.3s;
+}
+
+.card:hover .card-heart{
+    transform:scale(1.2);
+}
+
+.featured-button{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:50px;
+}
+
+/*====================================================
+                POLAROID PORTFOLIO
+====================================================*/
+
+.gallery{
+
+    width:90%;
+    max-width:1200px;
+    margin:120px auto;
+
+}
+
+.portfolio-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,280px);
+
+    justify-content:center;
+
+    column-gap:72px;
+
+    row-gap:50px;
+
+}
+
+.polaroid{
+
+    background:#DCC8BC;
+
+    padding:15px 15px 25px;
+
+    border-radius:10px;
+
+    box-shadow:0 12px 28px rgba(0,0,0,.08);
+
+    transition:0.4s ease;
+
+    cursor:pointer;
+
+}
+
+.polaroid:hover{
+
+    transform:translateY(-8px) rotate(-2deg);
+
+    box-shadow:0 18px 35px rgba(0,0,0,.15);
+
+}
+
+.polaroid img{
+
+    width:100%;
+
+    height:270px;
+
+    object-fit:cover;
+
+    object-position:center;
+
+    border-radius:8px;
+
+    display:block;
+
+}
+
+.polaroid-text{
+
+    text-align:center;
+
+    margin-top:18px;
+
+}
+
+.polaroid-text h3{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:24px;
+
+    color:#1F1F1F;
+
+    margin-bottom:8px;
+
+}
+
+.polaroid-text p{
+
+    font-size:14px;
+
+    color:#1F1F1F;
+
+    line-height:1.5;
+
+}
+
+.polaroid:nth-child(odd):hover{
+
+    transform:translateY(-8px) rotate(-2deg);
+
+}
+
+.polaroid:nth-child(even):hover{
+
+    transform:translateY(-8px) rotate(2deg);
+
+}
+
+.polaroid:hover{
+
+    transform:rotate(0deg) translateY(-10px);
+
+}
+
+/*=============================
+      INSTAGRAM CTA
+=============================*/
+
+.instagram-cta{
+
+    padding:120px 20px;
+
+    text-align:center;
+
+    background:#F8F3EE;
+
+}
+
+.cta-container{
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+.instagram-cta h2{
+
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:48px;
+
+    color:#5A4034;
+
+    margin-bottom:20px;
+
+}
+
+.instagram-cta p{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    color:#3A2F2A;
+
+    margin-bottom:15px;
+
+}
+
+.cta-question{
+
+    font-weight:600;
+
+    margin-top:25px;
+
+}
+
+.cta-highlight{
+
+    color:#B22222;
+
+    font-weight:600;
+
+}
+
+.cta-custom{
+
+    color:#7A4E48;
+
+    font-weight:500;
+
+    margin-bottom:35px;
+
+}
+
+.instagram-btn{
+
+    display:inline-block;
+
+    background:#C98A73;
+
+    color:white;
+
+    padding:15px 35px;
+
+    border-radius:40px;
+
+    text-decoration:none;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    transition:0.3s ease;
+
+}
+
+.instagram-btn:hover{
+
+    background:#B77760;
+
+    transform:translateY(-4px);
+
+    box-shadow:0 12px 20px rgba(193,53,132,.25);
+
+}
+
+.insta-id{
+
+    margin-top:18px;
+
+    font-size:16px;
+
+    color:#5A4034;
+
+    letter-spacing:1px;
+
+}
+
+/*=============================
+            FAQ
+=============================*/
+
+.faq{
+
+    padding:120px 20px;
+    background:#FAF6F2;
+
+}
+
+.faq-container{
+
+    max-width:900px;
+    margin:auto;
+
+}
+
+.faq h2{
+
+    text-align:center;
+    font-size:48px;
+    font-family:'Cormorant Garamond', serif;
+    color:#5A4034;
+    margin-bottom:10px;
+
+}
+
+.faq-subtitle{
+
+    text-align:center;
+    color:#666;
+    margin-bottom:50px;
+    font-size:17px;
+
+}
+
+.faq-item{
+
+    margin-bottom:18px;
+    border-radius:14px;
+    overflow:hidden;
+    background:#DCC8BC;
+    box-shadow:0 10px 20px rgba(0,0,0,.06);
+
+}
+
+.faq-question{
+
+    width:100%;
+    padding:22px 28px;
+    border:none;
+    outline:none;
+    background:none;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    cursor:pointer;
+    font-size:18px;
+    font-weight:600;
+    color:#2D2424;
+
+}
+
+.faq-question span{
+
+    font-size:28px;
+    transition:.3s;
+
+}
+
+.faq-answer{
+
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .4s ease;
+    background:#F8F3EE;
+
+    padding:0 10px;
+
+}
+
+.faq-answer ul{
+
+    margin:0;
+    padding:15px 70px 25px 80px;
+    color:#3A2F2A;
+    line-height:1.9;
+    font-size:16px;
+
+}
+
+.faq-answer li{
+
+    margin-bottom:10px;
+
+}
+
+.faq-item.active .faq-answer{
+
+    max-height:500px;
+
+}
+
+.faq-item.active .faq-question span{
+
+    transform:rotate(45deg);
+
+}
+
+
+/*=============================
+            REVIEWS
+=============================*/
+
+.reviews{
+
+    padding:110px 20px;
+
+    background:#FFF8F3;
+
+}
+
+.reviews-container{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.reviews h2{
+
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:48px;
+
+    color:#5A4034;
+
+    margin-bottom:15px;
+
+}
+
+.reviews-subtitle{
+
+    max-width:700px;
+
+    margin:0 auto 60px;
+
+    color:#6B6B6B;
+
+    font-size:17px;
+
+    line-height:1.8;
+
+}
+
+.reviews-grid{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:70px;
+
+    flex-wrap:wrap;
+
+    margin-top:50px;
+
+}
+
+.review-card{
+
+    width:290px;
+
+    background:#fff;
+
+    padding:10px;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:0.3s ease;
+
+}
+
+.review-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.review-card img{
+
+    width:100%;
+
+    display:block;
+
+    border-radius:10px;
+
+}
+
+.review-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.review-card img{
+
+    width:100%;
+
+    border-radius:12px;
+
+    display:block;
+
+}
+
+/*=============================
+            FOOTER
+=============================*/
+
+.footer{
+
+    background:#F8F3EE;
+
+    padding:90px 20px 45px;
+
+    text-align:center;
+
+}
+
+.footer-container{
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+.footer h2{
+
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:48px;
+
+    color:#5A4034;
+
+    margin-bottom:25px;
+
+}
+
+.footer-message{
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    color:#4A3F35;
+
+    margin-bottom:25px;
+
+}
+
+.footer-tagline{
+
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:30px;
+
+    font-style:italic;
+
+    color:#8B5E4B;
+
+    margin-bottom:35px;
+
+}
+
+.footer-btn{
+
+    display:inline-block;
+
+    background:#B76E79;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    padding:16px 38px;
+
+    border-radius:50px;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.footer-btn:hover{
+
+    background:#9F5C67;
+
+    transform:translateY(-5px);
+
+    box-shadow:0 12px 24px rgba(183,110,121,.30);
+
+}
+
+.footer-username{
+
+    margin-top:18px;
+
+    font-size:16px;
+
+    color:#5A4034;
+
+    letter-spacing:1px;
+
+}
+
+.footer-divider{
+
+    width:120px;
+
+    height:2px;
+
+    background:#DCC8BC;
+
+    margin:40px auto;
+
+    border-radius:50px;
+
+}
+
+.footer-copy{
+
+    color:#6A5A50;
+
+    font-size:15px;
+
+    line-height:1.8;
+
+}
+
+/* ===========================
+        ACTIVE NAV LINK
+=========================== */
+
+nav ul li a{
+
+    position: relative;
+
+    transition: all 0.3s ease;
+
+}
+
+nav ul li a.active{
+
+    color: #D95D73;
+
+    background: rgba(217,93,115,0.12);
+
+    padding: 8px 16px;
+
+    border-radius: 30px;
+
+    font-weight: 600;
+
+    box-shadow: 0 4px 12px rgba(217,93,115,0.18);
+
+}
+
+nav ul li a.active::after{
+
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+
+    bottom: -6px;
+
+    transform: translateX(-50%);
+
+    width: 24px;
+
+    height: 3px;
+
+    background: #D95D73;
+
+    border-radius: 50px;
+
+}
+
+/*=====================================
+        MOBILE NAVIGATION
+=====================================*/
+
+.hamburger{
+
+    display:none;
+
+    font-size:32px;
+
+    cursor:pointer;
+
+    color:var(--brown);
+
+}
+
+/*=========================================
+            LIGHTBOX
+=========================================*/
+
+.lightbox{
+
+    position:fixed;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,.85);
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    z-index:9999;
+
+    opacity:0;
+    visibility:hidden;
+    transition:opacity .3s ease, visibility .3s ease;
+
+}
+
+.lightbox.active{
+
+    opacity:1;
+    visibility:visible;
+
+}
+
+.lightbox img{
+
+    max-width:90%;
+    max-height:85%;
+
+    border-radius:15px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.4);
+
+}
+
+.close-lightbox{
+
+    position:absolute;
+
+    top:30px;
+    right:40px;
+
+    color:white;
+
+    font-size:45px;
+
+    cursor:pointer;
+
+}
+
+.polaroid img{
+
+    cursor:zoom-in;
+
+}
+
