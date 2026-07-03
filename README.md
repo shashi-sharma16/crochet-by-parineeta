@@ -108,4 +108,4 @@ GitHub: https://github.com/shashi-sharma16
 
 ### ⭐ Customer Reviews
 
-![Customer Reviews](screenshots/reviews.png)
+![Customer Reviews](screenshots/review.png)
